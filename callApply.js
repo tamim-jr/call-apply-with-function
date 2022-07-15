@@ -16,7 +16,7 @@ const smartPerson = {
         console.log(this.firstNameis, this.firstNameis.lastNameis);
     },
     billAmount : function(amount){
-        // console.log(this);
+        console.log(this);
         this.salary -= amount;
         return this.salary;
     }
