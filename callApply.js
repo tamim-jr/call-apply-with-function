@@ -12,11 +12,11 @@ const smartPerson = {
     firstNameis : 'Sanam',
     lastNameis : 'Afrin',
     salary : 15000,
-    totalNameis : function(){
-        console.log(this.firstNameis, this.firstNameis.lastNameis);
-    },
+    // totalNameis : function(){
+    //     console.log(this.firstNameis, this.firstNameis.lastNameis);
+    // },
     billAmount : function(amount){
-        console.log(this);
+        // console.log(this);
         this.salary -= amount;
         return this.salary;
     }
@@ -31,13 +31,15 @@ const heroPerson = {
 // console.log(heroPerson);
 // let result = smartPerson.billAmount(140);
 // smartPerson.billAmount(3000);
-// console.log(result);
-
+// // console.log(result);
 // console.log(smartPerson.salary);
 
 
+
 // smartPerson.billAmount();
-const heroSalaryBill = smartPerson.billAmount.bind(heroPerson);
-heroSalaryBill(2000); 
-heroSalaryBill(2000); 
+// const heroSalaryBill = smartPerson.billAmount.bind(heroPerson);
+// heroSalaryBill(2000); 
+// heroSalaryBill(2000); 
+// console.log(heroPerson.salary);
+smartPerson.billAmount.call(heroPerson, 900);
 console.log(heroPerson.salary);
